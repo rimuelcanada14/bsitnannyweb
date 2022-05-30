@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSit</title>
+    <link rel="stylesheet" href="BSit CSS File.css" />
+</head>
+<body>
+    <header>
+        <a></a>
+        <nav>
+            <li><a href = "BSit-Choosing-Roles.html">GET STARTED</a></li>
+            <li><a href = "#contact">CONTACT US</a></li>
+        </nav>
+    </header>
+
+    <section>
+        <img src = "background.png" id = "background">
+        <img src = "logo.png" id = "logo">
+        <h2 id = "welcometext">Welcome to BSit! </h2>
+        <a href = "#about_us" id="welcometextbtn">ABOUT BSit</a>
+        <img src = "parents_back.png" id = "parents_back">
+        <img src = "nannies_front.png" id = "nannies_front">
+    </section>
+
+    <div class="about_us" id="about_us">
+        <div class="mainabout_us" id = "mainabout_us">
+            <img src = "logoabt.png">
+            <div class = "about-us-text">
+                <br><h2> About BSit </h2><br>
+                <p> BSit is short term for the word "baby sit" whereas it is related to the webpage's service. BSit is also related to the program taken by the developers of the
+                    webpage, which is BS Information Technology. BSit is a free website application where parents will be able to find nannies 
+                    for their children and nannies will be able to find parents who need them. This application provides an easier and faster process of booking a nanny with the use of 
+                    modern technology. With the use of BSit, we can help parents who nned someone to take care of their children, and help nannies gain income to sustain their daily 
+                    needs.</p>
+                <p> Always remember, the right sit that you will need in a bit! There will be BSit.</p><br><br><br>
+            </div>
+        </div>
+        <a href = "BSit HTML File.html" id="finishabt"> BACK </a>
+    </div>
+
+    <div class="contact" id = "contact">
+        <div class = "contact-title">
+            <h2> Get in touch! </h2>
+        </div>
+        <div class = "contact-box">
+            <div class = "contact-card">
+                <img src = "melidpic.png" width = "120px" height="120px">
+                <h5>Rimuel Cañada</h5>
+                <div class = "contactbody">
+                    <p>Contact Number: <br> 0995 554 3851</p> <br>
+                    <p>E-mail Address: rscanada2021@plm.edu.ph</p><br>
+                    <p>Location: <br>Malate, Manila</p>
+                </div>
+            </div>
+            <div class = "contact-card">
+                <i class="fas fa-bars"></i>
+                <img src = "ravenidpic.png" width = "120px" height="120px">
+                <h5>Raven Cagsawa</h5>
+                <div class = "contactbody">
+                    <p>Contact Number: <br> 0921 455 2569</p> <br>
+                    <p>E-mail Address: rldcagsawa2021@plm.edu.ph</p><br>
+                    <p>Location: <br>Pandacan, Manila</p>
+                </div>
+            </div>
+            <div class = "contact-card">
+                <i class="fas fa-bars"></i>
+                <img src = "jenieidpic.png" width = "120px" height="120px">
+                <h5>Jenie Tadena</h5>
+                <div class = "contactbody">
+                    <p>Contact Number: <br> 0953 382 6325</p> <br>
+                    <p>E-mail Address: jotadena2021@plm.edu.ph</p><br>
+                    <p>Location: <br>Old Capitol Site, Quezon City</p>
+                </div>
+            </div>
+        </div>
+        <a href = "BSit HTML File.html" id="finish"> BACK </a>
+    </div>
+
+
+    <script>
+        let background = document.getElementById('background');
+        let logo = document.getElementById('logo');
+        let parents_back = document.getElementById('parents_back');
+        let welcometext = document.getElementById('welcometext')
+        let welcometextbtn = document.getElementById('welcometextbtn')
+        let nannies_front = document.getElementById('nannies_front');
+        window.addEventListener ('scroll', function(){
+            let value = window.scrollY;
+            background.style.left = value * 0.25 + 'px';
+            parents_back.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
+
